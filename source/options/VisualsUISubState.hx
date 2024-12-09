@@ -102,6 +102,18 @@ class VisualsUISubState extends BaseOptionsMenu
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
 		
+		var option:Option = new Option('Health Bar Transparency',
+			'How much transparent should the health bar and icons be.',
+			'healthBarAlpha',
+			'percent',
+			1);
+		option.scrollSpeed = 1.6;
+		option.minValue = 0.0;
+		option.maxValue = 1;
+		option.changeValue = 0.1;
+		option.decimals = 1;
+		addOption(option);
+		
 		var option:Option = new Option('GradientColor TimeBar ',
 			"If chacked timebar will have gradient color\nbut maybe will have bug when you change timebar color again",
 			'gradientTimeBar',
